@@ -14,9 +14,7 @@
   </ul>
 
 
-  <p [ngStyle]="{'background-color':name === 'Santosh' ? 'green' : 'red'}"
-  
-  >
+  <p [ngStyle]="{'background-color':name === 'Santosh' ? 'green' : 'red'}">
     Angular Directives Are Cool!
   </p>
 
@@ -26,4 +24,12 @@
 
   <div class="btn btn-success">Button</div>
 
+  <button [ngClass]="['btn', 'btn-primary']">Button</button>
+
+  <p>Passing a configuration object:</p>
+  <button [ngClass]="{ btn:true, 'btn-primary':true }">
+    Button
+  </button>
+
+  <p>The hero's birthday is {{ birthday | date }}</p>
 </div>
